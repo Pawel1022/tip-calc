@@ -1,0 +1,120 @@
+* {
+	box-sizing: 0;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #ddd;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.tips-calculator {
+	padding: 10em 0;
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(91, 196, 91);
+		border-top-left-radius: 1em;
+		border-top-right-radius: 1em;
+	}
+
+	&__heading {
+		padding: 2em 4em;
+		font-size: 3rem;
+		color: rgb(255, 255, 255);
+	}
+
+	&__description {
+		padding: 4em 4em;
+		font-size: 2.5em;
+		color: rgb(255, 255, 255);
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2em 4em;
+		background-color: rgb(255, 255, 255);
+		border-bottom-left-radius: 1em;
+		border-bottom-right-radius: 1em;
+	}
+
+	&__label {
+		padding-bottom: 1em;
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+
+	&__input {
+		padding: 0.5em 1em;
+		margin-bottom: 1em;
+		width: 80%;
+		text-align: center;
+		border-radius: 0.5em;
+	}
+
+	&__select {
+		padding: 0.5em 1em;
+	}
+
+	&__app-res {
+		padding: 2em 0;
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+
+	&__btn {
+		padding: 1em 2em;
+		font-size: 2rem;
+		background-color: rgb(65, 105, 225);
+		color: rgb(255, 255, 255);
+		border-radius: 1em;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: rgb(91, 196, 91);
+		}
+	}
+}
+
+@media (max-width: 556px) {
+	.tips-calculator {
+		margin: 2em;
+		padding: 5em 0;
+		text-align: center;
+		&__heading {
+			padding: 1em 0;
+			font-size: 2em;
+		}
+
+		&__description {
+			padding: 2em 0em;
+			font-size: 1.5em;
+		}
+
+		&__label{
+			font-size: 1.5em;
+		}
+
+		&__btn{
+			padding: 0.75em 1.5em;
+		}
+	}
+}

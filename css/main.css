@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ddd;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tips-calculator {
+  padding: 10em 0;
+}
+
+.tips-calculator__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5bc45b;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.tips-calculator__heading {
+  padding: 2em 4em;
+  font-size: 3rem;
+  color: white;
+}
+
+.tips-calculator__description {
+  padding: 4em 4em;
+  font-size: 2.5em;
+  color: white;
+}
+
+.tips-calculator__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 4em;
+  background-color: white;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.tips-calculator__label {
+  padding-bottom: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.tips-calculator__input {
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  width: 80%;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.tips-calculator__select {
+  padding: 0.5em 1em;
+}
+
+.tips-calculator__app-res {
+  padding: 2em 0;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.tips-calculator__btn {
+  padding: 1em 2em;
+  font-size: 2rem;
+  background-color: royalblue;
+  color: white;
+  border-radius: 1em;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.tips-calculator__btn:hover {
+  background-color: #5bc45b;
+}
+
+@media (max-width: 556px) {
+  .tips-calculator {
+    margin: 2em;
+    padding: 5em 0;
+    text-align: center;
+  }
+  .tips-calculator__heading {
+    padding: 1em 0;
+    font-size: 2em;
+  }
+  .tips-calculator__description {
+    padding: 2em 0em;
+    font-size: 1.5em;
+  }
+  .tips-calculator__label {
+    font-size: 1.5em;
+  }
+  .tips-calculator__btn {
+    padding: 0.75em 1.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="tips-calculator">
+				<div class="tips-calculator__header">
+					<h1 class="tips-calculator__heading">Tips Calculator</h1>
+					<p class="tips-calculator__description">
+						Podziel się rachunkami ze swoimi znajomymi
+					</p>
+				</div>
+				<div class="tips-calculator__form">
+					<label
+						class="tips-calculator__label"
+						for="tips-calculator__input--bill"
+						>Kwota do zapłaty :</label
+					>
+					<input
+						type="number"
+						class="tips-calculator__input tips-calculator__input--bill"
+						id="tips-calculator__input--bill"
+					/>
+					<label
+						class="tips-calculator__label"
+						for="tips-calculator__input--persons"
+						id="tips-calculator__input--persons"
+						>Ilość osób :</label
+					>
+					<input
+						type="number"
+						class="tips-calculator__input tips-calculator__input--persons"
+					/>
+					<label class="tips-calculator__label" for="tips-calculator__select"
+						>Napiwek</label
+					>
+					<select id="tips-calculator__select" class="tips-calculator__select">
+						<option class="tips-calculator__select-item" value="0.05">5%</option>
+						<option class="tips-calculator__select-item" value="0.1">
+							10%
+						</option>
+						<option class="tips-calculator__select-item" value="0.15">
+							15%
+						</option>
+						<option class="tips-calculator__select-item" value="0.2">
+							20%
+						</option>
+						<option class="tips-calculator__select-item" value="0.25">
+							25%
+						</option>
+					</select>
+
+					<p class="tips-calculator__app-res">
+						
+					</p>
+
+					<button class="tips-calculator__btn">Wyślij</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
