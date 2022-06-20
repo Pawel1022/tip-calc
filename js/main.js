@@ -24,9 +24,11 @@ const calc = () => {
 
 	const sum = (bill + (bill * tip)) / persons
 
+	
+
 
 	p.style.display = 'block'
-	p.textContent = `Powinniśćie się złożyć po ${sum} zł.`
+	p.textContent = `Powinniśćie się złożyć po ${sum.toFixed(2)} zł.`
 
 	
 
