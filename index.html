@@ -47,7 +47,17 @@
 						>Napiwek</label
 					>
 					<select id="tips-calculator__select" class="tips-calculator__select">
-						<option class="tips-calculator__select-item" value="0.05">5%</option>
+						<option
+							class="tips-calculator__select-item"
+							value="0"
+							disabled
+							selected
+						>
+							Wybierz napiwek
+						</option>
+						<option class="tips-calculator__select-item" value="0.05">
+							5%
+						</option>
 						<option class="tips-calculator__select-item" value="0.1">
 							10%
 						</option>
@@ -62,9 +72,8 @@
 						</option>
 					</select>
 
-					<p class="tips-calculator__app-res">
-						
-					</p>
+					<p class="tips-calculator__error"></p>
+					<p class="tips-calculator__app-res"></p>
 
 					<button class="tips-calculator__btn">Wyślij</button>
 				</div>

@@ -1,41 +1,28 @@
 const cashBill = document.querySelector('.tips-calculator__input--bill');
 const people = document.querySelector('.tips-calculator__input--persons');
-const tip = document.querySelectorAll('.tips-calculator__select-item');
 const btn = document.querySelector('.tips-calculator__btn');
 const tipList = document.querySelector('.tips-calculator__select');
 const p = document.querySelector('.tips-calculator__app-res');
+const appError = document.querySelector('.tips-calculator__error');
 
-let selected;
-
-const main = () => {
-	tip.forEach((option) => option.addEventListener('click', checkTipValue));
-    btn.addEventListener('click',calc)
-    
+const validation = () => {
+	if (cashBill.value == '' || people.value == '' || tipList.value == 0) {
+		appError.textContent = 'Uzupełnij poprawnie wszystkie pola !';
+	} else {
+		appError.textContent = '';
+		calc();
+	}
 };
-
-const checkTipValue = (e) => {
-	selected = e.target.closest('option').value;
-};
-
 
 const calc = () => {
-    const tips = selected * cashBill.value / people.value
-    const bill = cashBill.value / people.value
-    const toPay = Math.round(tips+bill)
+	const bill = cashBill.value
+	const person = people.value
+	const tip = tipList.value
 
-   
+	const sum = (bill + (bill * tip)) /person
 
-   p.textContent = `Powinniśćie się złożyć po ${toPay} zł .`
+	p.textContent = `Musicie się złożyć po ${sum}`
+	p.style.display ='block'
+};
 
-   
-   
-
-   
-    
-}
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', main);
+btn.addEventListener('click', validation);

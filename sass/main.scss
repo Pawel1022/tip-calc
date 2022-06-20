@@ -22,6 +22,7 @@ body {
 
 .tips-calculator {
 	padding: 10em 0;
+	
 
 	&__header {
 		display: flex;
@@ -75,7 +76,8 @@ body {
 	}
 
 	&__app-res {
-		padding: 2em 0;
+		display: none;
+		padding: 2em ;
 		font-size: 2em;
 		text-transform: uppercase;
 	}
@@ -91,6 +93,12 @@ body {
 		&:hover {
 			background-color: rgb(91, 196, 91);
 		}
+	}
+
+	&__error{
+		padding: 2em;
+		color: rgb(255, 0, 0);
+		font-size: 2rem;
 	}
 }
 

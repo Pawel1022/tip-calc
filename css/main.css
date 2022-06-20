@@ -95,7 +95,8 @@ body {
 }
 
 .tips-calculator__app-res {
-  padding: 2em 0;
+  display: none;
+  padding: 2em;
   font-size: 2em;
   text-transform: uppercase;
 }
@@ -112,6 +113,12 @@ body {
 
 .tips-calculator__btn:hover {
   background-color: #5bc45b;
+}
+
+.tips-calculator__error {
+  padding: 2em;
+  color: red;
+  font-size: 2rem;
 }
 
 @media (max-width: 556px) {
