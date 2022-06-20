@@ -96,7 +96,7 @@ body {
 
 .tips-calculator__app-res {
   display: none;
-  padding: 2em;
+  padding: 1em;
   font-size: 2em;
   text-transform: uppercase;
 }
@@ -116,7 +116,7 @@ body {
 }
 
 .tips-calculator__error {
-  padding: 2em;
+  padding: 1em;
   color: red;
   font-size: 2rem;
 }
